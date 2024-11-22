@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Skeleton } from './Skeleton';
 import { User } from './User';
 
