@@ -2,11 +2,11 @@ import React from 'react';
 
 export const Success = ({ count }) => {
   return (
-    <div class="success-block">
+    <div className="success-block">
       <img src="/assets/success.svg" alt="Success" />
-      <h3>Успешно!</h3>
-      <p>Всем {count} пользователям отправлено приглашение.</p>
-      <button className="send-invite-btn">Назад</button>
+      <h3>Success!</h3>
+      <p>Ivitation sended to {count} {`${count > 1 ? 'users' : 'user'}`}.</p>
+      <button className="send-invite-btn" onClick={() => window.location.reload()}>Back</button>
     </div>
   );
 };

@@ -14,7 +14,7 @@ body {
   outline: none;
 }
 
-.App {
+.app {
   width: 400px;
   height: 600px;
   margin: 50px auto;
@@ -112,7 +112,10 @@ body {
     }
   }
 }
-
+.pages {
+  display: flex;
+  justify-content: center;
+}
 .send-invite-btn {
   background-color: rgb(251, 80, 0);
   padding: 16px 15px;
@@ -133,6 +136,10 @@ body {
   &:active {
     transform: translateY(2px);
     box-shadow: none;
+  }
+  &:disabled {
+    background-color: rgb(167, 165, 164);
+    box-shadow: 0 7px 10px rgba(228, 216, 210, 0.4);
   }
 }
 
