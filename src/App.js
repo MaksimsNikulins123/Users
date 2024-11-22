@@ -10,7 +10,6 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [inputSearchValue, setInputSearchValue] = useState('');
   const [sendSeccess, setSendSeccess] = useState(false);
-  const [pages, setPages] = useState(1)
 
   useEffect(() => {
     fetch('https://reqres.in/api/users')
@@ -55,7 +54,6 @@ function App() {
           onClickInvite={onClickInvite} 
           invites={invites}
           onClickSendInvites={onClickSendInvites}
-          pages={pages}
         />
       }
     </div>

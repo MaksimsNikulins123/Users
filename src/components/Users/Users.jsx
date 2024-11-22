@@ -1,7 +1,7 @@
 import { Skeleton } from './Skeleton';
 import { User } from './User';
 
-export const Users = ({inputSearchValue, onChangeInputValue,  items, isLoading, onClickInvite, invites, onClickSendInvites, pages}) => {
+export const Users = ({inputSearchValue, onChangeInputValue,  items, isLoading, onClickInvite, invites, onClickSendInvites}) => {
 
   
 
@@ -38,9 +38,6 @@ export const Users = ({inputSearchValue, onChangeInputValue,  items, isLoading, 
           }
         </ul>
       )}
-      <div className="pages">
-        {pages}
-      </div>
       <button 
         className="send-invite-btn" 
         onClick={onClickSendInvites}
